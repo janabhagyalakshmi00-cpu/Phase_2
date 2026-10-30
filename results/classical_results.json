@@ -1,0 +1,74 @@
+{
+  "best": "logistic_regression",
+  "all": {
+    "logistic_regression": {
+      "macro_f1": 1.0,
+      "accuracy": 1.0,
+      "precision_per_class": [
+        1.0,
+        1.0
+      ],
+      "recall_per_class": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          899,
+          0
+        ],
+        [
+          0,
+          601
+        ]
+      ],
+      "train_time_sec": 0.01774454116821289
+    },
+    "random_forest": {
+      "macro_f1": 1.0,
+      "accuracy": 1.0,
+      "precision_per_class": [
+        1.0,
+        1.0
+      ],
+      "recall_per_class": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          899,
+          0
+        ],
+        [
+          0,
+          601
+        ]
+      ],
+      "train_time_sec": 0.5150249004364014
+    },
+    "svm_rbf": {
+      "macro_f1": 1.0,
+      "accuracy": 1.0,
+      "precision_per_class": [
+        1.0,
+        1.0
+      ],
+      "recall_per_class": [
+        1.0,
+        1.0
+      ],
+      "confusion_matrix": [
+        [
+          899,
+          0
+        ],
+        [
+          0,
+          601
+        ]
+      ],
+      "train_time_sec": 0.15976190567016602
+    }
+  }
+}

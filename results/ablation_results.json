@@ -1,0 +1,103 @@
+{
+  "note": "All ablations use a fixed 60-sample validation subset for fair comparison. PCA/scalers fitted on train only. Full noisy evaluation only for main 4-qubit config.",
+  "seed_mean_f1": 0.7961,
+  "seed_std_f1": 0.101,
+  "ablations": [
+    {
+      "ablation": "pca_qubits",
+      "n_components": 2,
+      "n_qubits": 2,
+      "explained_variance": 0.693,
+      "n_params": 6,
+      "train_time_sec": 1.42,
+      "ideal_macro_f1": 0.7962,
+      "noisy_macro_f1": null,
+      "final_loss": 0.3391
+    },
+    {
+      "ablation": "pca_qubits",
+      "n_components": 4,
+      "n_qubits": 4,
+      "explained_variance": 0.8128,
+      "n_params": 12,
+      "train_time_sec": 2.49,
+      "ideal_macro_f1": 0.676,
+      "noisy_macro_f1": 0.6419,
+      "final_loss": 0.4895
+    },
+    {
+      "ablation": "pca_qubits",
+      "n_components": 6,
+      "n_qubits": 6,
+      "explained_variance": 0.8708,
+      "n_params": 18,
+      "train_time_sec": 4.21,
+      "ideal_macro_f1": 0.7304,
+      "noisy_macro_f1": null,
+      "final_loss": 0.4149
+    },
+    {
+      "ablation": "ansatz_depth",
+      "ansatz_reps": 1,
+      "n_qubits": 4,
+      "n_params": 8,
+      "train_time_sec": 1.52,
+      "ideal_macro_f1": 0.6267,
+      "final_loss": 0.4443
+    },
+    {
+      "ablation": "ansatz_depth",
+      "ansatz_reps": 2,
+      "n_qubits": 4,
+      "n_params": 12,
+      "train_time_sec": 2.67,
+      "ideal_macro_f1": 0.676,
+      "final_loss": 0.4895
+    },
+    {
+      "ablation": "ansatz_depth",
+      "ansatz_reps": 3,
+      "n_qubits": 4,
+      "n_params": 16,
+      "train_time_sec": 3.69,
+      "ideal_macro_f1": 0.8565,
+      "final_loss": 0.4607
+    },
+    {
+      "ablation": "feature_map_reps",
+      "fm_reps": 1,
+      "n_qubits": 4,
+      "n_params": 12,
+      "train_time_sec": 3.04,
+      "ideal_macro_f1": 0.676,
+      "final_loss": 0.4895
+    },
+    {
+      "ablation": "feature_map_reps",
+      "fm_reps": 2,
+      "n_qubits": 4,
+      "n_params": 12,
+      "train_time_sec": 3.97,
+      "ideal_macro_f1": 0.7306,
+      "final_loss": 0.6892
+    },
+    {
+      "ablation": "seed_sensitivity",
+      "seed": 42,
+      "ideal_macro_f1": 0.6571,
+      "train_time_sec": 3.49
+    },
+    {
+      "ablation": "seed_sensitivity",
+      "seed": 7,
+      "ideal_macro_f1": 0.8369,
+      "train_time_sec": 3.38
+    },
+    {
+      "ablation": "seed_sensitivity",
+      "seed": 123,
+      "ideal_macro_f1": 0.8942,
+      "train_time_sec": 3.58
+    }
+  ]
+}

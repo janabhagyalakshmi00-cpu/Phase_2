@@ -1,0 +1,20 @@
+{
+  "logistic_regression": {
+    "full_validation_accuracy": 1.0,
+    "full_validation_macro_f1": 1.0,
+    "same_300_samples_accuracy": 1.0,
+    "same_300_samples_macro_f1": 1.0
+  },
+  "random_forest": {
+    "full_validation_accuracy": 1.0,
+    "full_validation_macro_f1": 1.0,
+    "same_300_samples_accuracy": 1.0,
+    "same_300_samples_macro_f1": 1.0
+  },
+  "svm_rbf": {
+    "full_validation_accuracy": 1.0,
+    "full_validation_macro_f1": 1.0,
+    "same_300_samples_accuracy": 1.0,
+    "same_300_samples_macro_f1": 1.0
+  }
+}

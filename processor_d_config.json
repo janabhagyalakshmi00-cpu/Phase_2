@@ -1,0 +1,55 @@
+{
+  "processor_id": "psq1_linear4_v1",
+  "n_qubits": 4,
+  "coupling_map": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "native_gate_set": [
+    "rx",
+    "ry",
+    "rz",
+    "h",
+    "cx",
+    "sx"
+  ],
+  "qubit_layout": "linear",
+  "noise_assumptions": {
+    "single_qubit_error_rate": 0.01,
+    "two_qubit_error_rate": 0.05,
+    "readout_error_rate": 0.02,
+    "notes": "Assumptions match the organizer QFF2026-v2 benchmark rates for consistency with noisy evaluation of the PS-Q1 VQC. Linear topology chosen because the VQC uses linear entanglement (ZZFeatureMap + RealAmplitudes linear)."
+  },
+  "design_rationale": "Processor D is designed as a 4-qubit linear chain to match the qubit count and linear entanglement pattern of the PS-Q1 hybrid VQC (ZZFeatureMap with linear entanglement + RealAmplitudes ansatz). Bidirectional CX links minimise SWAP overhead for the nearest-neighbour interactions used in the feature map and ansatz. The native gate set (rx, ry, rz, h, sx, cx) is sufficient to compile both the VQC circuits and the official QFT-3 benchmark while remaining fully covered by the QFF2026-v2 noise model. This design keeps circuit depth low for the 4-feature (or PCA-reduced) encoding used in the biomedical classifier.",
+  "benchmark_results": {
+    "qft3_circuit_depth_before_transpile": 6,
+    "qft3_circuit_depth_after_transpile": 20,
+    "qft3_two_qubit_gate_count": 12,
+    "qft3_swap_overhead": 1,
+    "qft3_fidelity_ideal": 1.0,
+    "qft3_fidelity_noisy": 0.611593,
+    "benchmark_noise_model_version": "QFF2026-v2"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "experiment": "four_qubits_three_ansatz_repetitions",
+  "seed": 42,
+  "n_qubits": 4,
+  "ansatz_reps": 3,
+  "maxiter": 30,
+  "training_subset_size": 200,
+  "validation_size_ideal": 1500,
+  "noisy_validation_subset_size": 300,
+  "pca_explained_variance": 0.8128040127145517,
+  "n_params": 16,
+  "training_time_sec": 7.947791337966919,
+  "ideal_full_validation_accuracy": 0.8653333333333333,
+  "ideal_full_validation_macro_f1": 0.851620713160802,
+  "ideal_full_validation_confusion_matrix": [
+    [
+      877,
+      22
+    ],
+    [
+      180,
+      421
+    ]
+  ],
+  "ideal_noisy_subset_macro_f1": 0.852005149739505,
+  "noisy_subset_accuracy": 0.8633333333333333,
+  "noisy_subset_macro_f1": 0.852005149739505,
+  "note": "Ideal metrics use the full validation set. Noisy metrics use a fixed-seed 300-sample subset. Compare noisy and ideal subset scores on the same samples. This experiment alone does not establish quantum advantage."
+}

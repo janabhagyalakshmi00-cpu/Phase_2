@@ -1,0 +1,13 @@
+{
+  "encoding": "ZZFeatureMap (angle) + PCA(4)",
+  "n_qubits": 4,
+  "ansatz": "RealAmplitudes reps=2 linear",
+  "n_params": 12,
+  "optimizer": "COBYLA",
+  "maxiter": 15,
+  "train_subset_size": 100,
+  "train_time_sec": 1.401533603668213,
+  "ideal_subset_macro_f1": 0.6611764705882353,
+  "noisy_subset_macro_f1": 0.6228786926461345,
+  "note": "Subset evaluation for computational feasibility. Classical baseline reaches F1=1.0; quantum is expected to lag on this separable feature set."
+}
